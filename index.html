@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Grunt CFD</title>
+    <title>Flower Shop</title>
     <link rel="icon" href="favicon.ico" />
     <meta name="title" content="" />
     <meta name="description" content="" />
@@ -17,12 +17,110 @@
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
 
-    <link rel="stylesheet" href="dest/style.min.css" />
     <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/font-awesome.min.css" />
+    <link rel="stylesheet" href="dest/style.min.css" />
   </head>
 
   <body>
-    <main class="mainwrapper"></main>
+    <header class="d-flex align-items-center justify-content-between header">
+      <div class="header__hamburger">
+        <!-- <div class="hamburger"></div> -->
+        <!-- onclick="this.classList.toggle('active')" -->
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="100">
+          <path
+            class="line top"
+            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+          />
+          <path class="line middle" d="m 30,50 h 40" />
+          <path
+            class="line bottom"
+            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+          />
+        </svg>
+      </div>
+      <a href="#" class="header__logo">flower<span>.</span></a>
+      <div class="header__menu">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </div>
+      <div class="header__icons">
+        <a href="#"><i class="fa fa-heart"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <a href="#"><i class="fa fa-user"></i></a>
+      </div>
+    </header>
+    <!-- <nav class="nav">
+      <div class="nav__menu">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav> -->
+    <main class="mainwrapper">
+      <!--Section Home -->
+      <section class="section-home">
+        <!-- <div class="container-fluid"> -->
+        <div class="home d-flex align-items-center">
+          <div class="home__content noselect">
+            <h3>fresh flowers</h3>
+            <span>natural & beautiful flowers</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              aliquid ullam atque porro ab? Eligendi ipsam, neque reprehenderit
+              rerum odit quos laudantium hic porro cupiditate doloribus! Fugit
+              esse voluptate rem.
+            </p>
+            <a href="#" class="btn">
+              <span>shop now</span>
+              <svg width="13px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </a>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Section About -->
+      <section class="section-about">
+        <div class="about">
+          <h2 class="about__heading"><span>about </span>us</h2>
+          <div class="about__video row">
+            <div class="about__video-container">
+              <video src="./img/about-vid.mp4" loop autoplay muted></video>
+              <h3>best flower sellers</h3>
+            </div>
+            <div class="about__video-content">
+              <h3>why choose us?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                tempora inventore at est ducimus similique tempore repellat
+                consequuntur aliquid, minus amet officiis omnis, dicta, sunt
+                aliquam voluptate eius possimus dignissimos?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis minima quod veniam magnam neque sunt nostrum ipsum,
+                dicta cum nihil!
+              </p>
+              <a href="#" class="btn">
+                <span>learn mores</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/main.js"></script>
   </body>

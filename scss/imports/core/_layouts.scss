@@ -13,6 +13,7 @@
 }
 html,
 body {
+  font-size: 62.5%;
   width: 100%;
   max-width: $container-max-width;
   margin: auto;
@@ -20,13 +21,17 @@ body {
   background: $white-cl;
   scroll-behavior: smooth;
   position: relative;
-  @include customscroll();
+  @include customScroll();
   .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
   }
   .pd {
     padding: 60px;
@@ -60,6 +65,15 @@ body {
     padding-right: 0;
     padding-left: 0;
   }
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
 
   @media (min-width: $xxs-min) {
     .container {
@@ -91,15 +105,19 @@ body {
     // CSS responsive large desktop
   }
   @include md {
+    font-size: 70%;
     // CSS responsive desktop
   }
   @include sm {
     // CSS responsive tablet
+    font-size: 60%;
   }
   @include xs {
+    // font-size: 55%;
     // CSS responsive mobile
   }
   @include xxs {
+    font-size: 50%;
     // CSS responsive small mobile
   }
 

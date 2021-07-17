@@ -1,1 +1,133 @@
 // CSS HOMEPAGE
+.section-home {
+  .home {
+    padding: 2rem 9%;
+    background: url(../../../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center !important;
+    min-height: 100vh;
+    &__content {
+      max-width: 50rem;
+      h3 {
+        font-size: 6rem;
+        color: #333;
+        text-transform: capitalize;
+        font-family: Pb;
+      }
+      span {
+        text-transform: capitalize;
+        font-size: 3.5rem;
+        color: $color-1;
+        padding: 1rem 0;
+        line-height: 1.5;
+      }
+      p {
+        font-family: Pi;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: #999999;
+        padding: 1rem 0;
+        line-height: 1.5;
+      }
+    }
+  }
+  @include sm {
+    .home {
+      padding: 2rem;
+    }
+  }
+  @include xs {
+    .home {
+      &__content {
+        h3 {
+          font-size: 5rem;
+        }
+        span {
+          font-size: 2.5rem;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.section-about {
+  .about {
+    padding: 2rem 9%;
+    &__heading {
+      text-transform: capitalize;
+      font-family: Pb;
+      text-align: center;
+      font-size: 4rem;
+      color: #333;
+      padding: 1rem;
+      margin: 2rem 0;
+      span {
+        color: $color-1;
+      }
+    }
+    &__video {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+      padding-bottom: 3rem;
+      &-container {
+        flex: 1 1 40rem;
+        position: relative;
+        video {
+          width: 100%;
+          border: 1.5rem solid #fff;
+          border-radius: 0.5rem;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          height: 100%;
+          object-fit: cover;
+        }
+        h3 {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 3rem;
+          background: linear-gradient(to right, $color-1, $color-2);
+          width: 100%;
+          padding: 1rem 2rem;
+          font-family: Pb;
+          text-transform: uppercase;
+          text-align: center;
+          mix-blend-mode: screen;
+        }
+      }
+      &-content {
+        flex: 1 1 40rem;
+        h3 {
+          font-size: 3rem;
+          text-transform: capitalize;
+          color: #333;
+          font-family: Pr;
+        }
+        p {
+          font-size: 1.5rem;
+          color: #999;
+          font-family: Pr;
+          padding: 0.5rem 0;
+          padding-top: 1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  @include sm {
+    .about {
+      padding: 2rem 5%;
+    }
+  }
+  @include xs {
+    .about {
+      &__heading {
+        font-size: 3rem;
+      }
+    }
+  }
+}
